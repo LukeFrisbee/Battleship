@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 22716f13e807c6f4ba2268f16f47b3bf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: back1
+    100002: back2
+    100004: back3
+    100006: emssive
+    100008: emssive 1
+    100010: emssive 2
+    100012: //RootNode
+    100014: model_railgun_barrel_front
+    100016: model_railgun_barrel_front 1
+    100018: model_railgun_barrel_front 2
+    100020: model_weapon_rotate
+    100022: polySurface2
+    100024: polySurface2 1
+    100026: polySurface2 2
+    100028: emissive
+    100030: emissive 1
+    100032: emissive 2
+    100034: emissive 3
+    100036: emissive 4
+    100038: model_railgun_barrel_left
+    100040: model_railgun_barrel_right
+    100042: model_railgun_barrel_top
+    400000: back1
+    400002: back2
+    400004: back3
+    400006: emssive
+    400008: emssive 1
+    400010: emssive 2
+    400012: //RootNode
+    400014: model_railgun_barrel_front
+    400016: model_railgun_barrel_front 1
+    400018: model_railgun_barrel_front 2
+    400020: model_weapon_rotate
+    400022: polySurface2
+    400024: polySurface2 1
+    400026: polySurface2 2
+    400028: emissive
+    400030: emissive 1
+    400032: emissive 2
+    400034: emissive 3
+    400036: emissive 4
+    400038: model_railgun_barrel_left
+    400040: model_railgun_barrel_right
+    400042: model_railgun_barrel_top
+    2100000: mat_battlefleet
+    2100002: mat_battleship_emissive
+    2300000: back1
+    2300002: back2
+    2300004: back3
+    2300006: emssive
+    2300008: emssive 1
+    2300010: emssive 2
+    2300012: //RootNode
+    2300014: model_railgun_barrel_front
+    2300016: model_railgun_barrel_front 1
+    2300018: model_railgun_barrel_front 2
+    2300020: model_weapon_rotate
+    2300022: polySurface2
+    2300024: polySurface2 1
+    2300026: polySurface2 2
+    2300028: emissive
+    2300030: emissive 1
+    2300032: emissive 2
+    2300034: emissive 3
+    2300036: emissive 4
+    2300038: model_railgun_barrel_left
+    2300040: model_railgun_barrel_right
+    2300042: model_railgun_barrel_top
+    3300000: back1
+    3300002: back2
+    3300004: back3
+    3300006: emssive
+    3300008: emssive 1
+    3300010: emssive 2
+    3300012: //RootNode
+    3300014: model_railgun_barrel_front
+    3300016: model_railgun_barrel_front 1
+    3300018: model_railgun_barrel_front 2
+    3300020: model_weapon_rotate
+    3300022: polySurface2
+    3300024: polySurface2 1
+    3300026: polySurface2 2
+    3300028: emissive
+    3300030: emissive 1
+    3300032: emissive 2
+    3300034: emissive 3
+    3300036: emissive 4
+    3300038: model_railgun_barrel_left
+    3300040: model_railgun_barrel_right
+    3300042: model_railgun_barrel_top
+    4300000: model_polyfleet_battleship_railgun9
+    4300002: model_weapon_rotate
+    4300004: back1
+    4300006: emssive
+    4300008: model_railgun_barrel_front
+    4300010: polySurface2
+    4300012: back3
+    4300014: emssive
+    4300016: model_railgun_barrel_front
+    4300018: polySurface2
+    4300020: back2
+    4300022: emssive
+    4300024: model_railgun_barrel_front
+    4300026: polySurface2
+    4300028: model_railgun_barrel_right
+    4300030: emissive
+    4300032: emissive
+    4300034: model_railgun_barrel_top
+    4300036: emissive
+    4300038: emissive
+    4300040: model_railgun_barrel_left
+    4300042: emissive
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_battlefleet
+    second: {fileID: 2100000, guid: e7a3602af0f5913499d3a297a80f321c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_battleship_emissive
+    second: {fileID: 2100000, guid: 0577b54192047a842b9adb4b16f72873, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

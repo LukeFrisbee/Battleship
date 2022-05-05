@@ -1,0 +1,113 @@
+private IEnumerator PlaySingleGameCoroutine(bool showThisGame = true, int delayBetweenPlayers = 250)
+{
+    boards = new BattleshipBoard[2] { new BattleshipBoard(agents[0].Nickname, 0, Board0LeftPosition),
+                                              new BattleshipBoard(agents[1].Nickname, 1, Board1LeftPosition) };
+
+    exceptionMessage = null;
+    winner = null;
+
+    try
+    {
+        /* Initialize the two agents: these are likely to succeed */
+
+        if (!InitializeAgent(0))
+        {
+            winner = agents[1].Nickname;
+            yield return winner;
+        }
+        if (!InitializeAgent(1))
+        {
+            winner = agents[0].Nickname;
+            yield return winner;
+        }
+
+        /* Position the two fleets: might fail if ships are out-of-bounds */
+
+        if (!PositionFleet(0))
+        {
+            winner = agents[1].Nickname;
+            yield return winner;
+        }
+        if (!PositionFleet(1))
+        {
+            winner = agents[0].Nickname;
+            yield return winner;
+        }
+
+        /* Display the gameboards, if playing a live game */
+
+        if (showThisGame)
+        {
+            MarqueePrintPlayerNames();
+            boards[0].DrawBoard();
+            boards[1].DrawBoard();
+        }
+
+        /* Main Game Loop
+         * 
+         *   The gameboard has 100 slots but we allow for 120 turns to 
+         *   accomodate agents that shoot off the board or shoot the same
+         *   square multiple times.
+         */
+
+        while (boards[0].ShotCount < 120 && boards[1].ShotCount < 120)
+        {
+            /* Let the first agent play its turn */
+
+            if (!PlayAgentsTurn(0))
+            {
+                winner = agents[1].Nickname;
+                yield return winner;
+            }
+
+            if (showThisGame)
+            {
+                MarqueePlayerAttack(gridSquare.x, gridSquare.y, shipDamage, 0);
+                boards[1].DrawShot(gridSquare.x, gridSquare.y);
+            }
+
+            if (boards[1].ShipLives == 0)
+            {
+                winner = agents[0].Nickname;
+                yield return winner;
+            }
+
+            //Thread.Sleep(delayBetweenPlayers);
+            yield return new WaitForSeconds(1);
+
+            /* Let the second agent play its turn */
+
+            if (!PlayAgentsTurn(1))
+            {
+                winner = agents[0].Nickname;
+                yield return winner;
+            }
+
+            if (showThisGame)
+            {
+                MarqueePlayerAttack(gridSquare.x, gridSquare.y, shipDamage, 1);
+                boards[0].DrawShot(gridSquare.x, gridSquare.y);
+            }
+
+            if (boards[0].ShipLives == 0)
+            {
+                winner = agents[1].Nickname;
+                yield return winner;
+            }
+
+            //Thread.Sleep(delayBetweenPlayers);
+            yield return new WaitForSeconds(1);
+        }
+    }
+    finally
+    {
+        if (showThisGame)
+        {
+            MarqueePrintWinner(winner);
+            //Console.WriteLine($"{exceptionMessage}");
+            Debug.Log($"{exceptionMessage}");
+        }
+    }
+
+    yield return winner;
+}
