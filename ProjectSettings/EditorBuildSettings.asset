@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Brian Resources/Brian Scenes/Starter Screen.unity
+    guid: dd935c24d1713be4ba4c44f865079c4c
+  - enabled: 1
+    path: Assets/Brian Resources/Brian Scenes/Main Screen.unity
+    guid: 93409ca675109f6499013f0e66dcbc13
+  - enabled: 1
+    path: Assets/Brian Resources/Brian Scenes/AI Selection.unity
+    guid: e3da7cff7c916514198047d917698284
+  - enabled: 1
+    path: Assets/Brian Resources/Brian Scenes/Scene - Brian.unity
+    guid: 6a89e9b8d15e30540828b4cf2a624de9
   m_configObjects: {}
