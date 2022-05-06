@@ -10,7 +10,7 @@ namespace Battleship
     class BattleshipRunner : MonoBehaviour
     {
         [SerializeField]
-        string[] args;
+        public string[] args;
         [SerializeField]
         BattleshipEngine engine;
         [SerializeField]
