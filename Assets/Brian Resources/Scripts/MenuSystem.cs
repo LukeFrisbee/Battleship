@@ -4,24 +4,8 @@ using UnityEngine;
 
 public class MenuSystem : MonoBehaviour
 {
-    [SerializeField] private GameObject titleMenu, settingsMenu;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void PlayButton()
-    {
-        SceneLoader.Instance.ToAISelectionScreen();
-    }
+    [SerializeField] private GameObject titleMenu, settingsMenu; 
+    public void PlayButton() => SceneController.Instance.ToAISelectionScreen(); 
 
     public void SettingsButton()
     {
@@ -33,5 +17,11 @@ public class MenuSystem : MonoBehaviour
     {
         settingsMenu.SetActive(false);
         titleMenu.SetActive(true);
+    }
+
+    public void ExitButton()
+    {
+        print("stopping!");
+        Application.Quit();
     }
 }

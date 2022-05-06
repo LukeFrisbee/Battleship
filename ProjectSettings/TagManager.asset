@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cube
   - Attack
+  - Runner
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - SelectionPanel
   - 
   - 
   - 

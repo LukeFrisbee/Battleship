@@ -6,6 +6,11 @@ using UnityEngine;
 public class BritoUtil : MonoBehaviour 
 { 
 
+    public static string GetName(string path)
+    { 
+        return Path.GetFileName(path).Replace(".dll", "");
+    }
+
     public static void WriteToBinaryFile<T>(string filePath, T objectToWrite, bool append = false)
     {
         using (Stream stream = File.Open(filePath, append ? FileMode.Append : FileMode.Create))

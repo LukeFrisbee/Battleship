@@ -1297,6 +1297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fc49e97b0b34e4aa7b577ef1223241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  side: 1
   flipped: 0
   itemHolderPlayer: {fileID: 1117688312}
   itemPrefabRight: {fileID: 7504312740295231826, guid: 938aa727f0289cf449c338aee9fe1dd3, type: 3}
@@ -1317,6 +1318,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: 
   EmptyDLL: {fileID: 750219417}
+  selections:
+  - {fileID: 888974697}
+  - {fileID: 888974695}
 --- !u!114 &888974697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1329,6 +1333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fc49e97b0b34e4aa7b577ef1223241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  side: 0
   flipped: 1
   itemHolderPlayer: {fileID: 1067446567}
   itemPrefabRight: {fileID: 3909598520169727330, guid: 0e2567ee72c391d40b28f6f8bc98420d, type: 3}

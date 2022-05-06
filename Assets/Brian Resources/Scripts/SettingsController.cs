@@ -30,17 +30,9 @@ public class SettingsController : MonoBehaviour
 	
 
 	IEnumerator ShowLoadDialogCoroutine()
-	{
-		// Show a load file dialog and wait for a response from user
-		// Load file/folder: both, Allow multiple selection: true
-		// Initial path: default (Documents), Initial filename: empty
-		// Title: "Load File", Submit button text: "Load"
-		yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.Folders, true, null, null, "DLL Folder", "Load");
-
-		// Dialog is closed
-		// Print whether the user has selected some files/folders or cancelled the operation (FileBrowser.Success)
-		Debug.Log(FileBrowser.Success);
-
+	{ 
+		yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.Folders, true, null, null, "DLL Folder", "Load"); 
+		Debug.Log(FileBrowser.Success); 
 		if (FileBrowser.Success)
 		{
 			// Print paths of the selected files (FileBrowser.Result) (null, if FileBrowser.Success is false)
@@ -52,8 +44,7 @@ public class SettingsController : MonoBehaviour
 	}
 
 	private void SaveToDisk(string path)
-    {
-
+    { 
 		text.text = path;
 		BritoUtil.WriteSettings(path);
     }

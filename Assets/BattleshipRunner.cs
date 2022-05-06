@@ -16,7 +16,7 @@ namespace Battleship
         [SerializeField]
         float delayBetweenPlayers = 0.25f;
 
-        void Start()
+        public void RunBattle()
         {
             List<BattleshipAgent> battleshipAgents = GameUtilities.CreateAgentList(args);
 
